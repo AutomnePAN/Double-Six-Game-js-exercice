@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Iceberg' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Vampiro One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Stardos Stencil' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Homemade Apple' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="header-box"> 
+            <h1 class="header-primary">
+                double six
+            </h1> 
+        </div>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Computer</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <button href="popup" class="btn-pop"><i class="ion-ios-download-outline"></i><a href="#popup">Rules</a></button>
+            <img src="dice-5.png" id="dice-1" alt="Dice-1" class="dice dice--1">
+            <img src="dice-3.png" id="dice-2" alt="Dice-2" class="dice dice--2">
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__right">
+                    <a href="#" class="popup__close">&times;</a>
+                    <h2 class="header-secondary">Double Six Rules</h2>
+                    <p class="popup__text">
+                        The game has 2 players, playing in rounds
+                        In each turn, a player rolls two dices as many times as he whishes. Each result get added to his ROUND score
+                        BUT, if two dices give the same number , all his ROUND score gets lost. In addition, if the player have 2 six, he will lose all his points. 
+                        But if the player have 2 ones, his opponent will lose all his points.  
+                        After that, it's the next player's turn
+                        The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
+                        The first player to reach 66 points on GLOBAL score wins the game
+                    </p>
+                    <a href="#" >Close </a>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
